@@ -22,7 +22,13 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+require 'gltf'
+
+model = Gltf.load(File.open('foo.gltf'))
+model.json['accessors']
+```
+
 
 ## Development
 
