@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
 
-require "gltf"
+require 'gltf'
 file = ARGV[0]
 puts Gltf::Binary.read(File.open(file)).json
