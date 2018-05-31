@@ -1,9 +1,9 @@
 RSpec.describe Gltf do
-  it "has a version number" do
-    expect(Gltf::VERSION).not_to be nil
-  end
-
-  it "does something useful" do
-    expect(false).to eq(true)
+  describe '.load' do
+    let(:file) { 'file' }
+    it do
+      expect(Gltf::Binary).to receive(:read).with(file)
+      Gltf.load(file)
+    end
   end
 end
