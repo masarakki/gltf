@@ -12,7 +12,7 @@ module Gltf
     array :chunks, type: :chunk, read_until: :eof
 
     def json
-      @json ||= Oj.load(chunks.find{|x| x.type == 'JSON'}.data.to_s)
+      @json ||= Oj.load(chunks.find { |x| x.type == 'JSON' }.data.to_s)
     end
   end
 end
