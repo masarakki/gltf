@@ -9,5 +9,9 @@ module Gltf
     def type
       chunk_type.strip
     end
+
+    def snapshot
+      { type: type, length: len }
+    end
   end
 end
