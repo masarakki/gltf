@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'bindata'
 module Gltf
   class Chunk < BinData::Record
