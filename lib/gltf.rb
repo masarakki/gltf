@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'gltf/version'
 require 'gltf/binary'
 
